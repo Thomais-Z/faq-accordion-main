@@ -1,0 +1,15 @@
+{
+  "name": "faq-accordion-main",
+  "version": "1.0.0",
+  "description": "Frontend Mentor FAQ accordion challenge",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Thomais Zafeiriou",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.11.0"
+  }
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: top -30rem center / cover no-repeat url(/assets/images/background-pattern-desktop.svg);
+  background-color: hsl(275, 100%, 97%);
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.faq--container {
+  margin: 0 4rem 2rem 4rem;
+  padding: 3rem 3rem 1rem 3rem;
+  width: 48rem;
+  border-radius: 9px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.faq-icon--container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.faq-h1 {
+  font-size: 4.5rem;
+  color: hsl(292, 42%, 14%);
+}
+
+.faq-question--container {
+  padding: 1rem 0;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.faq-question--container:last-child {
+  border-bottom: none;
+}
+
+.question-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.question-box-h2 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: hsl(292, 42%, 14%);
+}
+
+.question-box-icon {
+  width: 2.2rem;
+  cursor: pointer;
+}
+
+.question-p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: hsl(292, 16%, 49%);
+  transition: 0.4s;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-p {
+  display: none;
+}
+
+.open {
+  height: 10rem;
+}
+
+.active {
+  color: hsl(287, 86%, 47%);
+}
+
+.attribution {
+  font-size: 1.3rem;
+  text-align: center;
+  color: hsl(292, 42%, 14%);
+}
+.attribution a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: hsl(287, 86%, 47%);
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background: top -34rem left 0 / cover no-repeat url(/assets/images/background-pattern-mobile.svg);
+    background-color: hsl(275, 100%, 97%);
+  }
+
+  .faq--container {
+    width: fit-content;
+  }
+
+  .attribution {
+    font-size: 1rem;
+  }
+
+  .attribution a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  body {
+    background-position: top -36rem left 0;
+  }
+  .faq-h1 {
+    font-size: 2.5rem;
+  }
+
+  .faq--container {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .question-box-h2 {
+    font-size: 1.3rem;
+  }
+
+  .question-box {
+    gap: 1rem;
+  }
+}
